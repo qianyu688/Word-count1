@@ -9,7 +9,10 @@
 int count_chars(FILE* fp);
 int count_words(FILE* fp);
 
+int an;
+
 int main(int argc, char* argv[]) {
+    int n;
     FILE* fp = NULL;
     char* filename;
     char parameter;
@@ -60,6 +63,9 @@ int count_chars(FILE* fp) {
     rewind(fp); // 重置文件指针位置，以便其他函数可以读取文件
     return count;
 }
+
+int mn;
+double aa;
 
 // 统计单词数
 int count_words(FILE* fp) {
